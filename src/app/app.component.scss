@@ -1,0 +1,59 @@
+.header, .navs, .location, .nav-btns ul, .nav-btns ul a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header {
+    background-color: var(--nav-colour);
+    height: 70px;
+    max-width: 100%;
+    padding: 0px 30px;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.bookbliss-logo {
+    height: 40px;
+    width: auto;
+}
+
+.navs {
+    height: 30px;
+    justify-content: space-between;
+}
+
+.location {
+    background-color: var(--location-chip);
+    height: 30px;
+    min-width: 60px;
+    max-width: fit-content;
+    justify-content: space-around;
+    padding: 0px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.loc-pin {
+    height: 18px;
+    width: auto;
+}
+
+.nav-btns ul a{
+    height: 30px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 10px;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+.nav-btns ul {
+    list-style-type: none;
+}
+
+.nav-btns a {
+    text-decoration: none;
+}
