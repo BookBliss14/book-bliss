@@ -1,5 +1,10 @@
 <div class="header">
   <img
+    class="hamburger-icon"
+    src="../assets/icons/menu-burger_3917762.svg"
+    alt="Menu Icon"
+  />
+  <img
     class="bookbliss-logo"
     src="../assets/images/bookbliss-logo.png"
     alt="Logo"
@@ -24,6 +29,7 @@
 
 <app-homepage *ngIf="homepageRenderFlag"></app-homepage>
 
+<router-outlet></router-outlet>
 <div class="rendered-component">
 
 </div>

@@ -6,6 +6,8 @@
 :root {
     --nav-colour: rgba(109, 197, 209, 0.5);
     --location-chip: rgba(109, 197, 209, 1);
+    --tile-colour: rgba(253, 228, 158, 1);
+    --tile-border: rgba(254, 185, 65, 1);
 }
 
 * {
@@ -16,5 +18,3 @@
 body::-webkit-scrollbar{
     display: none;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

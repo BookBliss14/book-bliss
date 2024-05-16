@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,18 +9,22 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.location = "Pune";   //Add function to select locations
   }
-  constructor() {}
+  constructor(private router: Router) {
+
+  }
+
   title = 'bookbliss';
 
   location!: string;
   homepageRenderFlag: boolean = true;
 
   openLoginModal() {
-    console.log("Hi");
-    
+    this.homepageRenderFlag = false;
+    this.router.navigate(['/auth/login']);
   }
 
   openRegisterModal() {
-
+    this.homepageRenderFlag = false;
+    this.router.navigate(['/auth/register']);
   }
 }

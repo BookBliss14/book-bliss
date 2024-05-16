@@ -1,13 +1,25 @@
-<div class="about">
-
-</div>
-
-<div class="menu">
-    <div class="buy-books">
-
+<div class="container-fluid">
+    <div class="title">
+        <h3>Discover affordable resources for learning or give new life to your old textbooks</h3>
     </div>
-    <p> OR </p>
-    <div class="sell-books">
 
+    <div class="about">
+    </div>
+
+    <div class="search">
+        <form [formGroup]="searchForm">
+            <input class="search-bar" type="text" formControlName="searchString" placeholder="Search">
+            <a (click)="search()"><img class="search-icon" src="../../assets/icons/search.png" alt="Search Icon"></a>
+        </form>
+    </div>
+
+    <div class="menu">
+        <div class="buy-books">
+            <p (click)="buyBook()">BUY BOOK</p>
+        </div>
+        <p> OR </p>
+        <div class="sell-books">
+            <p (click)="sellBook()">SELL BOOK</p>
+        </div>
     </div>
 </div>
