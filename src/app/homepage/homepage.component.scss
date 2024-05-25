@@ -1,48 +1,48 @@
 .container-fluid {
-    top: 20px;
-    position: relative;
+  top: 20px;
+  position: relative;
 }
 
 .title {
-    text-align: center;
+  text-align: center;
 }
 
 .menu {
-    top: 150px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 0% 25%;
+  top: 150px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0% 25%;
 }
 
 .search {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
 }
 
 .search-bar {
-    height: 30px;
-    width: 500px;
+  height: 30px;
+  width: 500px;
 }
 
 .search-icon {
-    height: 25px;
-    width: auto;
+  height: 25px;
+  width: auto;
 }
 
-.buy-books, .sell-books {
-    height: 175px;
-    width: 175px;
-    display: flex;
-    flex-direction: column;
-    border: 3px solid;
-    border-color: var(--tile-border);
-    border-radius: 25px;
-    background-color: var(--tile-colour);
-    cursor: pointer;
+.buy-books,
+.sell-books {
+  height: 175px;
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid;
+  border-color: var(--tile-border);
+  border-radius: 25px;
+  background-color: var(--tile-colour);
 }

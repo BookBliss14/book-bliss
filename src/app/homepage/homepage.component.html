@@ -1,24 +1,24 @@
 <div class="container-fluid">
     <div class="title">
-        <h3>Discover affordable resources for learning or give new life to your old textbooks</h3>
+        <h1>Discover affordable resources for learning or give new life to your old textbooks</h1>
     </div>
 
     <div class="about">
     </div>
 
-    <div class="search">
-        <form [formGroup]="searchForm">
+    <form [formGroup]="searchForm">
+        <div class="search">
             <input class="search-bar" type="text" formControlName="searchString" placeholder="Search">
-            <a (click)="search()"><img class="search-icon" src="../../assets/icons/search.png" alt="Search Icon"></a>
-        </form>
-    </div>
+            <img class="search-icon clickable" (click)="search()" src="../../assets/icons/search.png" alt="Search Icon">
+        </div>
+    </form>
 
     <div class="menu">
-        <div class="buy-books">
+        <div class="buy-books clickable">
             <p (click)="buyBook()">BUY BOOK</p>
         </div>
         <p> OR </p>
-        <div class="sell-books">
+        <div class="sell-books clickable">
             <p (click)="sellBook()">SELL BOOK</p>
         </div>
     </div>

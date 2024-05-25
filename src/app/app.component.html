@@ -1,16 +1,16 @@
 <div class="header">
   <img
-    class="hamburger-icon"
+    class="hamburger-icon clickable"
     src="../assets/icons/menu-burger_3917762.svg"
     alt="Menu Icon"
   />
   <img
-    class="bookbliss-logo"
+    class="bookbliss-logo clickable"
     src="../assets/images/bookbliss-logo.png"
     alt="Logo"
   />
   <div class="navs">
-    <div class="location">
+    <div class="location clickable">
       <img
         class="loc-pin"
         src="../assets/icons/location-pin.png"
@@ -20,8 +20,8 @@
     </div>
     <div class="nav-btns">
       <ul>
-        <li><a (click)="openLoginModal()">LOGIN</a></li>
-        <li><a (click)="openRegisterModal()">REGISTER</a></li>
+        <li><a class="clickable" (click)="openLoginModal()">LOGIN</a></li>
+        <li><a class="clickable" (click)="openRegisterModal()">REGISTER</a></li>
       </ul>
     </div>
   </div>
