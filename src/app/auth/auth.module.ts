@@ -3,14 +3,15 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
-    path: 'auth/login',
+    path: '',
     component: LoginComponent
   },
   {
-    path: 'auth/register',
+    path: 'register',
     component: RegisterComponent
   }
 ]
@@ -21,7 +22,8 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ]
 })
 export class AuthModule { }

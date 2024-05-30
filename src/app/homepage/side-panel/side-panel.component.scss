@@ -1,0 +1,18 @@
+.container-fluid {
+  position: absolute;
+  top: 70px;
+  height: 100%;
+  width: 20%;
+  background-color: var(--nav-colour);
+  z-index: 1;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+ul li {
+  list-style-type: none;
+  margin: 10px auto;
+}

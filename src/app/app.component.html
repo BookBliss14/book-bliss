@@ -1,6 +1,7 @@
 <div class="header">
   <img
     class="hamburger-icon clickable"
+    (click)="sidePanelFlag=!sidePanelFlag"
     src="../assets/icons/menu-burger_3917762.svg"
     alt="Menu Icon"
   />
@@ -25,6 +26,9 @@
       </ul>
     </div>
   </div>
+</div>
+<div class="side-panel">
+  <app-side-panel *ngIf="sidePanelFlag"></app-side-panel>
 </div>
 
 <app-homepage *ngIf="homepageRenderFlag"></app-homepage>

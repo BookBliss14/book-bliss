@@ -6,6 +6,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  sidePanelFlag = false;
+
   ngOnInit(): void {
     this.location = "Pune";   //Add function to select locations
   }
@@ -25,6 +27,6 @@ export class AppComponent implements OnInit {
 
   openRegisterModal() {
     this.homepageRenderFlag = false;
-    this.router.navigate(['/auth/register']);
+    this.router.navigate(['/auth']);
   }
 }

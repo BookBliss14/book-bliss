@@ -8,7 +8,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit {
-
   searchForm!: FormGroup;
 
   constructor(

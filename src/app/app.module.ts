@@ -7,11 +7,13 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthModule } from './auth/auth.module';
+import { SidePanelComponent } from './homepage/side-panel/side-panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent
+    HomepageComponent,
+    SidePanelComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +21,7 @@ import { AuthModule } from './auth/auth.module';
     RouterModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    AuthModule
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

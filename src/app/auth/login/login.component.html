@@ -1,1 +1,21 @@
-<p>login works!</p>
+<div class="container-fluid">
+    <div class="header">
+        <h2>LOGIN</h2>
+        <img class="close clickable" (click)="close()" src="../../../assets/icons/close.png" alt="Close" />
+    </div>
+    <form [formGroup]="loginForm">
+        <div class="field">
+            <label></label>
+            <input type="text" formControlName="username" placeholder="Username" />
+        </div>
+        <div class="field">
+            <label></label>
+            <input type="password" formControlName="password" placeholder="Password" />
+        </div>
+    </form>
+    <div class="buttons">
+        <button class="login-btn clickable" (click)="login()">Login</button>
+        <button class="reset-btn clickable" (click)="loginForm.reset()">Reset</button>
+    </div>
+    <h4>Don't have an account? <span (click)="navigateToRegister()" class="register-link clickable">Register</span> from here.</h4>
+</div>

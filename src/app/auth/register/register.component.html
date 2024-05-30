@@ -1,1 +1,41 @@
-<p>register works!</p>
+<div class="container-fluid">
+    <div class="header">
+        <h2>REGISTER</h2>
+        <img class="close clickable" (click)="close()" src="../../../assets/icons/close.png" alt="Close" />
+    </div>
+    <form [formGroup]="registerForm">
+        <div class="field">
+            <label>Name</label>
+            <input type="text" formControlName="name" />
+        </div>
+        <div class="field">
+            <label>Email</label>
+            <input type="text" formControlName="email" />
+        </div>
+        <div class="field">
+            <label>Mobile Number</label>
+            <input type="text" formControlName="mobile" />
+        </div>
+        <div class="field">
+            <label>Education</label>
+            <input type="text" formControlName="education" />
+        </div>
+        <div class="field">
+            <label>College</label>
+            <input type="text" formControlName="college" />
+        </div>
+        <div class="field">
+            <label>Password</label>
+            <input type="password" formControlName="password" />
+        </div>
+        <div class="field">
+            <label>Re-Enter Password</label>
+            <input type="password" formControlName="passwordAgain" />
+        </div>
+    </form>
+    <div class="buttons">
+        <button class="register-btn clickable" (click)="register()">Register</button>
+        <button class="reset-btn clickable" (click)="registerForm.reset()">Reset</button>
+    </div>
+    <h4>Already have an account? <span (click)="navigateToLogin()" class="login-link clickable">Login</span> from here.</h4>
+</div>
